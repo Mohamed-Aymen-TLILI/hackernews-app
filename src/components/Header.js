@@ -6,10 +6,10 @@ const Header = () => {
         <>
         <h1>HACKERNEWS.</h1>
         <div>
-            <Link to="/New">
+            <Link to="/newstories">
                 New
             </Link>
-            <Link to="/Past">
+            <Link to="/topstories">
                 Past
             </Link>
         </div>
