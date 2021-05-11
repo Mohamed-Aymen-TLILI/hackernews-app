@@ -14,7 +14,7 @@ const getOneNews = async (storyId) => {
 export const getNews = async (type) => {
     try {
         const { data: newsIds }  = await axios.get(`${API_URL}/${type}.json`);
-        const news = await Promise.all(newsIds.slice(0, 20).map(getOneNews));
+        const news = await Promise.all(newsIds.slice(0, 200).map(getOneNews));
         return news;
     } catch(error){
         console.log('Error to get all news');
